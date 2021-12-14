@@ -1,15 +1,16 @@
 import React from 'react'
-import ButtonModal from './ButtonModal';
-import Modal from './Modal';
+
+const produtos = {"id":"tablet","fotos":[{"titulo":"tablet-2","src":"https:\/\/ranekapi.origamid.dev\/wp-content\/uploads\/2019\/03\/tablet-1.jpg"}],"nome":"Tablet","preco":"1899","descricao":"Gostaria de enfatizar que o in\u00edcio da atividade geral de forma\u00e7\u00e3o de atitudes pode nos levar a considerar.","vendido":"false","usuario_id":"lobo@origamid.com"}
 
 function App() {
-  const [modal, setModal] = React.useState(false)
+
+
 
   return (
     <div>
-      <div>{modal ? 'Modal aberto' : 'Modal fechado'}</div>
-      <Modal modal={modal} setModal={setModal} />
-      <ButtonModal setModal={setModal} />
+      <button>{}</button>
+      <button></button>
+      <button></button>
     </div>
   )
 }
