@@ -1,16 +1,15 @@
 import React from 'react'
+import Produto from './Produto'
 
-const produtos = {"id":"tablet","fotos":[{"titulo":"tablet-2","src":"https:\/\/ranekapi.origamid.dev\/wp-content\/uploads\/2019\/03\/tablet-1.jpg"}],"nome":"Tablet","preco":"1899","descricao":"Gostaria de enfatizar que o in\u00edcio da atividade geral de forma\u00e7\u00e3o de atitudes pode nos levar a considerar.","vendido":"false","usuario_id":"lobo@origamid.com"}
-
-function App() {
+const App = () => {
+  const [ativo, setAtivo] = React.useState(false)
 
 
 
   return (
     <div>
-      <button>{}</button>
-      <button></button>
-      <button></button>
+      {ativo && <Produto />}
+      <button onClick={() => setAtivo(!ativo)}>{ativo ? 'Desativar' : 'Ativar'}</button>
     </div>
   )
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Creator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Consumo de APIs</h1>
+  <div class="container">
+ 
+    <form id="buscaCep">
+      <h2>Endereço</h2>
+      <label for="cep">CEP</label>
+      <input type="number" name="cep" id="cep">
+      <label for="bairro">Bairro</label>
+      <input type="text" name="bairro" id="bairro">
+      <label for="rua">Rua</label>
+      <input type="text" name="rua" id="rua">
+      <label for="cidade">Cidade</label>
+      <input type="text" name="cidade" id="cidade">
+      <label for="uf">Estado</label>
+      <input type="text" name="uf" id="uf">
+    </form>
+
+    <div id="conversorMoedas">
+      <form action="moedas">
+        <h2>Conversor de Moedas</h2>
+        <label for="btc">Bitcoin</label>
+        <input type="number" name="btn" id="btn">
+        <label for="brl">Real</label>
+        <input type="number" name="brl" id="brl">
+        <p class="valores"></p>
+      </form> 
+    </div>
+
+    <div id="gerarPiadas">
+      <form class="piadas">
+        <h2>Piadas Aleatórias</h2>
+        <p>Carregando...</p>
+        <button type="button">Próxima</button>
+      </form> 
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
